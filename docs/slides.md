@@ -1,6 +1,6 @@
 ---
-title: "La Notazione Musicale Occidentale"
-subtitle: "Storia, Simboli e Sistema"
+title: "Dalle Macchine Pensanti al Suono Digitale"
+subtitle: "Come i computer hanno rivoluzionato la creatività musicale"
 institute: MEduLab
 date: \today
 theme: default
@@ -12,151 +12,214 @@ fontsize: 10pt
 lang: it
 ---
 
-# **1. TRADIZIONE ORALE (fino all'VIII secolo d.C.)**
-- La musica viene tramandata esclusivamente per via orale da maestro a discepolo
-- Sant'Isidoro di Siviglia (560-636): *"se i suoni non sono appresi a memoria dall'uomo, scompaiono, perché non si possono scrivere"*
-- I codici liturgici contengono solo testi, senza alcuna notazione musicale
+# **INTRODUZIONE**
 
-# **2. PRIME SCRITTURE MUSICALI - NOTAZIONE PALEOFRANCA (IX secolo, 801-900)**
+## Perché parliamo di computer per fare musica?
 
-::: columns
-:::: column
-- Primi tentativi di scrittura musicale
-- Compaiono segni posti a margine dei testi (spesso strofe di poesia classica)
-- Ancora non esiste una rappresentazione precisa della melodia
-::::
+- Il computer come strumento creativo, non solo calcolatore
+- Sintesi sonora: creare suoni che non esistono in natura
+- Controllo totale: ogni parametro è programmabile
+- Dal problema dei calcoli al problema della creatività sonora
 
-:::: column
-![](docs/assets/images/001.jpg)
-::::
-:::
+# **LA STORIA: I PROBLEMI CHE HANNO PORTATO AI COMPUTER**
 
-# **3. NEUMI ADIASTEMATICI (X secolo, 901-1000)**
-- **Codex Sangallensis 359 di San Gallo (930 d.C.)**: il più antico codice musicale notato
-- Utilizzo di **neumi** (segni) e **litterae significativae** (lettere aggiuntive)
-- **Notazione adiastemica**: non indica il valore degli intervalli tra i suoni, né l'altezza precisa delle note, né il ritmo
-- I codici fornivano indicazioni musicali solo a chi già conosceva bene il brano
-- Funzione: consultazione e insegnamento, non esecuzione diretta
+## Il problema degli errori umani (1820)
 
-# **4. INVENZIONE DEL RIGO MUSICALE (XI secolo, 1001-1100)**
+- Tavole matematiche piene di errori: navigazione, astronomia, ingegneria
+- Conseguenze: navi che naufragano, cannoni che mancano il bersaglio
+- Charles Babbage: "Perché non costruire una macchina che non sbaglia?"
+- **Macchina Differenziale** (1822): automatizzare per eliminare l'errore umano
 
-::: columns
-:::: column
-- Progressiva introduzione del rigo come riferimento spaziale
-- Inizialmente **due linee colorate**: una **rossa per il Fa**, una **gialla per il Do**
-- Le note iniziano a rappresentare:
-  - **Durata** (in base alla forma)
-  - **Altezza relativa** (in base alla posizione rispetto al rigo)
-::::
+## Ada Lovelace - Il primo programma (1843)
 
-:::: column
-![](docs/assets/images/002.jpg){width=50%}
-::::
-:::
+- **Macchina Analitica** di Babbage: non solo calcola, può essere programmata
+- Ada Lovelace: "La macchina potrebbe comporre musica!"
+- Primo algoritmo per calcolare i numeri di Bernoulli
+- Intuizione chiave: manipolare simboli, non solo numeri
 
-# **4.1 INVENZIONE DEL RIGO MUSICALE (XI secolo, 1001-1100)**
+## ENIAC - Dalla meccanica all'elettronica (1946)
 
-::: columns
-:::: column
-![](docs/assets/images/005.jpg){width=80%}
-::::
+- Seconda Guerra Mondiale: calcoli balistici urgenti
+- ENIAC: 30 tonnellate, 18.000 valvole, 180 m²
+- Primo computer elettronico programmabile general-purpose
+- Velocità: 5.000 operazioni/secondo vs calcolatrici meccaniche
 
-:::: column
-![](docs/assets/images/006.png){width=100%}
-::::
-:::
+## Max Mathews e la musica (1957)
 
+- Bell Labs: primi esperimenti di sintesi digitale del suono
+- 17 maggio 1957: primi 17 secondi di musica ("Silver Scale")
+- **MUSIC-N**: famiglia di linguaggi per sintesi sonora
+- Rivoluzione: il suono come dato manipolabile algoritmicamente
 
+# **COME FUNZIONA UN COMPUTER**
 
-# **5. TETRAGRAMMA DI GUIDO D'AREZZO (XI secolo)**
+## L'anatomia di un computer
 
+**CPU (Processore)**: Il direttore d'orchestra
 
-::: columns
-:::: column
-- **Guido d'Arezzo** (Guido monaco): perfeziona il **tetragramma** (4 linee)
-- Codifica la notazione, definendo posizioni precise delle note su righe e spazi
-- Inventa il nome delle note: **Ut, Re, Mi, Fa, Sol, La, Si**
-- **Notazione quadrata**: adatta per il canto gregoriano (estensione vocale limitata)
-- Sistema unificato per la scrittura musicale
+- Decide chi suona quando e cosa
+- Esegue le istruzioni del programma
 
-::::
+**RAM (Memoria)**: La scrivania di lavoro
 
-:::: column
-![](docs/assets/images/003.png)
-::::
-:::
+- Dove tieni gli spartiti aperti mentre lavori
+- Veloce ma temporanea
 
-# **6. NOTAZIONE MENSURALE (XIII secolo)**
+**Storage (Disco)**: L'archivio
 
+- La libreria dove conservi tutte le partiture
+- Permanente ma più lento
 
-::: columns
-:::: column
-- Con la **polifonia** nasce l'esigenza di misurare il tempo
-- **Franco di Colonia** (*Ars cantus mensurabilis*, ~1280): codifica le prime figure di durata
-- Compare il **gambo** per distinguere le note più brevi (semibrevis, minima)
-- Forme mensurali: **Maxima, Longa, Brevis** (testa quadrata piena)
+## Come comunicano tra loro?
 
-::::
+- Il **bus** come strada di comunicazione
+- Tutto è coordinato dal processore
+- **Esempio musicale**: 
+  - Campionare un suono = leggere da disco → RAM → CPU → altoparlante
+  - Processare in tempo reale = tutto rimane in RAM
 
-:::: column
-![](docs/assets/images/004.jpg)
-::::
-:::
+## Ma il computer capisce solo 0 e 1!
 
+- **Teoria dell'informazione**: tutto diventa numeri
+- Un suono = sequenza di numeri (campioni)
+- Una nota = frequenza numerica (440 Hz = La)
+- Un'immagine = griglia di numeri colorati
+- Fondamentale per il DSP: Digital Signal Processing
 
+# **LINGUAGGI DI PROGRAMMAZIONE**
 
-# **7. PENTAGRAMMA (XV secolo, ~1400)**
-- **Ugolino da Orvieto** (o da Forlì, 1380-1457): aggiunge la **quinta linea**
-- Nasce il **pentagramma** (dal greco *penta* = cinque + *gramma* = scrittura)
-- Maggiore estensione rispetto al tetragramma, ideale per musica polifonica e strumentale
-- **Equilibrio ottimale** tra chiarezza visiva e capacità rappresentativa (~1 ottava e mezza)
+## Dal pensiero alla macchina
 
-# **8. NOTAZIONE MENSURALE BIANCA (XV secolo)**
+**Linguaggio macchina**: 0 e 1 incomprensibili
 
-::: columns
-:::: column
-- Per **risparmiare tempo e inchiostro**, le note lunghe diventano **vuote**
-- Transizione dalla notazione nera (piena) a quella bianca (vuota)
+- `10110000 01100001`
 
-::::
+**Assembly**: Quasi macchina, molto tecnico
 
-:::: column
-![](docs/assets/images/008.png)
-::::
-:::
+- `MOV AL, 61h`
 
+**Linguaggi alto livello**: Più vicini al linguaggio umano
 
+- Python, C, Max/MSP, SuperCollider
+- "Come scrivere in italiano invece che in codice morse"
 
-# **9. NOTAZIONE ROTONDA (XVI-XVII secolo)**
+## Compilatori e interpreti
 
-::: columns
-:::: column
-- **1501**: invenzione della **stampa musicale** (Ottaviano Petrucci)
-- L'uso della **penna d'oca** e la stampa favoriscono la forma **rotonda**
-- Note rotonde più pratiche da tracciare e stampare rispetto alle quadrate
-- **XVII secolo**: **standardizzazione** della testa rotonda con gambo laterale
-- Sistema chiaro, efficiente e universalmente leggibile
+**Compilatore**: Traduce tutto prima
 
+- Come tradurre un intero libro
+- Più veloce all'esecuzione (C, C++)
 
-::::
+**Interprete**: Traduce riga per riga
 
-:::: column
-![](docs/assets/images/009.png){width=70%}
-::::
-:::
+- Come un interprete simultaneo
+- Più flessibile (Python, Max/MSP)
 
+**Esempio musicale**:
 
+- Partitura scritta vs improvvisazione guidata
 
-# **SINTESI DELL'EVOLUZIONE GRAFICA**
+## Perché esistono tanti linguaggi?
 
-**Cronologia:**
-1. Neumi adiastematici (IX-XI sec.)
-2. Notazione quadrata di Guido (XI sec.)
-3. Notazione mensurale nera (XIII sec.)
-4. Notazione mensurale bianca (XV sec.)
-5. Notazione rotonda moderna (XVI-XVII sec.)
+- Ogni problema ha il suo strumento migliore
+- **Max/MSP, Pure Data**: musica real-time, patch visuali
+- **SuperCollider**: sintesi avanzata, live coding
+- **Python**: analisi, machine learning musicale
+- **C/C++**: performance, plugin audio (VST)
+- **CSound**: sintesi classica, eredità di MUSIC-N
 
+Non c'è "il migliore", c'è "il più adatto"
 
-# Pentagramma - Estensione delle note
+# **COSA SIGNIFICA PROGRAMMARE**
 
-![](docs/assets/images/007.png)
+## Programmare = dare istruzioni precise
+
+- **Algoritmo** = ricetta di cucina
+- Il computer è stupido ma velocissimo
+- Deve sapere ESATTAMENTE cosa fare
+- "Spiegare a qualcuno che non ha mai cucinato come fare la pasta"
+
+## Variabili - I contenitori
+
+Una **variabile** = una scatola con un'etichetta
+
+```
+frequenza = 440       // La centrale
+volume = 0.8          // 80% del massimo
+durata = 2.5          // 2.5 secondi
+```
+
+- Possono cambiare nel tempo!
+- Il computer "ricorda" questi valori
+
+## Funzioni - Riutilizzare idee
+
+Una **funzione** = una mini-macchina
+
+- Input → elaborazione → output
+
+```
+generaSuono(frequenza, durata, volume)
+  → produce il suono
+```
+
+**Metafora musicale**:
+
+- Un "pattern" che ripeti variando i parametri
+- Come un ostinato che trasporti su diverse altezze
+
+## Macchine a stati finiti
+
+**Stati** = situazioni discrete
+
+- Intro, Verse, Chorus, Bridge, Outro
+
+**Transizioni** = passaggi tra stati
+
+- Quando finisce il verso → vai al ritornello
+
+**Esempio pratico**:
+
+- Sequencer come macchina a stati
+- Ogni step ha uno stato (nota on/off, parametri)
+- Le transizioni seguono regole (tempo, trigger)
+
+# **TEORIA DELL'INFORMAZIONE**
+
+## Tutto è informazione
+
+- **Bit** = 0 o 1, la più piccola unità
+- **8 bit** = 1 byte
+- Suono digitale = milioni di numeri al secondo
+- **44.100 campioni/secondo** = qualità CD
+- **24 bit/campione** = dinamica professionale
+
+## Rappresentare il mondo in numeri
+
+**Suono analogico → digitale**:
+
+- Campionamento: misurare l'onda sonora migliaia di volte al secondo
+- Quantizzazione: convertire ogni misura in numero
+
+**Altri esempi**:
+
+- Immagine → griglia di pixel (numeri RGB)
+- Testo → codici ASCII/Unicode
+- Video → sequenza di immagini + audio
+
+Tutto diventa manipolabile matematicamente!
+
+# **CONCLUSIONI**
+
+## La programmazione come creatività amplificata
+
+- Il computer **non sostituisce** la creatività, la **amplifica**
+- Programmare = pensare in modo strutturato e preciso
+- La musica elettronica contemporanea è figlia di questa rivoluzione
+- Dal Babbage meccanico (1822) ai sintetizzatori modulari virtuali (2025)
+
+**Il cerchio si chiude**:
+
+- Babbage voleva eliminare l'errore
+- Mathews voleva creare nuovi suoni
+- Oggi: controllo totale sul materiale sonoro attraverso la programmazione
